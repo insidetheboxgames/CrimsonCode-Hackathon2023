@@ -5,6 +5,18 @@ Regression::Linear::Linear(std::vector<int> X, std::vector<int> Y)
     train(X, Y);
 }
 
+float Regression::Linear::predict(int X, char entryType)
+{
+    if (entryType == Xentry)
+    {
+        return a + (b * X);
+    }
+    else if(entryType == Yentry)
+    {
+        return (X - a) / b;
+    }
+}
+
 float Regression::Linear::getA()
 {
     return a;

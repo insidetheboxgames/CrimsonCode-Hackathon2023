@@ -4,12 +4,17 @@
 #include<vector>
 #include<cmath>
 
+#define Xentry 'x'
+#define Yentry 'y'
+
+
 namespace Regression
 {
 	class Linear
 	{
 	public:
 		Linear(std::vector<int> X, std::vector<int> Y);
+		float predict(int X, char entryType);
 		float getA();
 		float getB();
 		float calcualteValue(int val);
