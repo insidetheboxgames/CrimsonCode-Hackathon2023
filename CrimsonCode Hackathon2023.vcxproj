@@ -141,12 +141,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\DataTypes.cpp" />
     <ClCompile Include="src\LinearRegression.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\DataTypes.h" />
     <ClInclude Include="include\LinearRegression.h" />
-    <ClInclude Include="lib\multiplot.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Data.csv" />

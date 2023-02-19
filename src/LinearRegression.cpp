@@ -1,6 +1,6 @@
 #include "LinearRegression.h"
 
-Regression::Linear::Linear(std::vector<float> X, std::vector<float> Y)
+Regression::Linear::Linear(std::vector<double> X, std::vector<double> Y)
 {
     train(X, Y);
 }
@@ -32,7 +32,7 @@ float Regression::Linear::calcualteValue(float val)
     return 0.0f;
 }
 
-void Regression::Linear::train(std::vector<float> X, std::vector<float> Y)
+void Regression::Linear::train(std::vector<double> X, std::vector<double> Y)
 {
     float sumX = 0, sumX2 = 0, sumY = 0, sumYX = 0;
 

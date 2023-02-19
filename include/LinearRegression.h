@@ -13,13 +13,14 @@ namespace Regression
 	class Linear
 	{
 	public:
-		Linear(std::vector<float> X, std::vector<float> Y);
+		Linear(std::vector<double> X, std::vector<double> Y);
+		Linear() {};
 		float predict(float X, char entryType);
 		float getA();
 		float getB();
 		float calcualteValue(float val);
+		void train(std::vector<double> X, std::vector<double> Y);
 	private:
-		void train(std::vector<float> X, std::vector<float> Y);
 		float a, b;
 	};
 }

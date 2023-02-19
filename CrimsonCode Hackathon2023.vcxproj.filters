@@ -21,12 +21,15 @@
     <ClCompile Include="src\LinearRegression.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\DataTypes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\LinearRegression.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="lib\multiplot.h">
+    <ClInclude Include="include\DataTypes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
